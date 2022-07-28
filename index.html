@@ -26,6 +26,7 @@
                         <a class="navbar-brand" href="">
                             <h2 class="fw-bold text-bg-primary text-white border rounded-2">CARRIER-IT</h2>
                         </a>
+                        <button class="btn btn-outline-primary px-5 py-2 ms-auto d-lg-none me-2 " data-bs-toggle="modal" data-bs-target="#resisterModal" type="button">Register</button>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -37,23 +38,23 @@
                                     <a class="nav-link mx-3 active" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#">Courses</a>
+                                    <a class="nav-link" href="#Courses">Courses</a>
                                 </li>
                                 <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#">Deals</a>
+                                    <a class="nav-link" href="#deal">Deals</a>
                                 </li>
                                 <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#">Success</a>
+                                    <a class="nav-link" href="#Success">Success</a>
                                 </li>
                                 <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#About">About</a>
                                 </li>
                                 <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#">Register</a>
+                                    <a class="nav-link" href="#Register">Register</a>
                                 </li>
                             </ul>
                             <form class="d-flex" role="search">
-                                <button class="btn btn-outline-primary px-5 py-2" type="submit">Register</button>
+                                <button class="btn btn-outline-primary px-5 py-2 " data-bs-toggle="modal" data-bs-target="#resisterModal" type="button">Register</button>
                             </form>
                         </div>
                     </div>
@@ -120,7 +121,6 @@
         <!----------------------------- 
             Header Section End 
         ------------------------------>
-        
         <!----------------------------- 
             Main Section Starts 
         ------------------------------>
@@ -128,7 +128,7 @@
              <!----------------------------- 
                  Courses Section Starts 
               ------------------------------>
-            <section class="container pt-5">
+            <section class="container pt-5" id="Courses">
                 <div class="text-center">
                     <h1 class="fw-bold">Discover Our Popular 
                     <br>Courses</h1>
@@ -264,12 +264,12 @@
              <!---------------------------------- 
                 Exploring Courses Section starts 
               ------------------------------------>
-              <section>
-                <div class="container d-flex align-items-center mb-5">
-                    <div class="explore-image border-4">
-                        <img src="images/working.png" alt="">
+              <section class="container my-5 py-5" id="deal">
+                <div class=" row  " style="background-color: #f4fafd;">
+                    <div class="explore-image border-4 col-md-6">
+                        <img class="img-fluid" src="images/working.png" alt="">
                     </div>
-                    <div style="background-color: #f4fafd;" class="explore-title ms-5" >
+                    <div  class="explore-title col-md-6 d-flex flex-column justify-content-center" >
                         <h2 class="fw-bold w-75">Explore The elearning 
                             Institute</h2>
                         <p>There are many variations of passages of Lorem Ipsum available, but the 
@@ -306,7 +306,7 @@
              <!------------------------------------ 
                  Ready to Section Start 
               -------------------------------------->
-              <section>
+              <section id="Register">
                 <div class="container  bg-primary rounded">
                     <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center pt-5 pb-5 ">
                         <div class="title text-white text-center text-lg-start">
@@ -314,7 +314,7 @@
                             <p>It is a long established fact that a reader will be distracted by the <br> readable content of a page when looking at its layout.</p>
                         </div>
                         <div class=" fw-bold">
-                            <button class="btn btn-light t py-2 px-4 text-primary">Register Now</button>
+                            <button class="btn btn-light t py-2 px-4 text-primary" data-bs-toggle="modal" data-bs-target="#resisterModal">Register Now</button>
                           </div>
                     </div>
                 </div>
@@ -323,16 +323,47 @@
                  Ready to Section End 
               -------------------------------------->
              <!------------------------------------ 
+                 Modal  Section start 
+              -------------------------------------->
+              <div class="modal fade" id="resisterModal" tabindex="-1" aria-labelledby="ResisterModallabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ResisterModallabel">PLEASE SIGN UP</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!------------------------------------ 
+                 Modal Section End 
+              -------------------------------------->
+
+             <!------------------------------------ 
                  Gellary Section Start 
               -------------------------------------->
               <section>
-                <div class="container mt-5">
+                <div class="container mt-5" id="Success">
                     <h1 class="text-center text-lg-start">Meet Our Successfull 
                        <br> Students</h1>
                         <p class="mt-4 text-center text-lg-start">It is a long established fact that a reader will be distracted by the <br> 
                             readable content of a page when looking at its layout</p>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-                        <div class="col">
+                        <div class="col d-none d-md-block">
                           <div class="card h-75">
                             <img src="images/student/student-1.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -385,7 +416,7 @@
                 <div class="container mt-5">
                     <div class="text-center">
                         <h1 class="fw-bold">Some Students Feedback</h1>
-                        <p class="text-gray mt-4">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p></div>
+                        <p class="text-gray mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
 
                         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                           <div class="carousel-inner">
@@ -537,16 +568,16 @@
                 Frequently Asked Questions Section Start 
               -------------------------------------->
               <section>
-                <div class="container mt-5">
+                <div class="container mt-5" id="About">
                     <div class="text-center">
                         <h1 class="fw-bold">Frequently Asked Questions</h1>
-                        <p class="text-gray mt-4">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout</p>
+                        <p class="text-gray mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
                       </div>
 
                         <div class="accordion mx-auto" id="accordionExample" style="max-width: 800px;">
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 What are the difference between flexbox and grid?
                               </button>
                             </h2>
@@ -558,7 +589,7 @@
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 What are the difference between bootstrap and tailwind?
                               </button>
                             </h2>
@@ -570,7 +601,7 @@
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 What is CSS box model?
                               </button>
                             </h2>
@@ -582,7 +613,7 @@
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 what is semantic tag?
                               </button>
                             </h2>
@@ -643,11 +674,32 @@
         <!----------------------------- 
             Footer Section Start 
         ------------------------------>
-        <footer>
-          <div class="container">
-
+        <footer class="p-5 mt-5 text-center text-white" style="background-color: #000000;" id="about">
+          <div class=" mx-auto" style="max-width: 175px;">
+              <h2 class="fw-bold text-info   rounded-2">CARRIER-IT</h2>
+              <p>
+                  965, West Shewrapara, Mirpur, Dhaka.
+              </p>
+              <div>
+                  <a href="" class="text-white text-decoration-none">Privacy Ploicy</a>
+                  | <a href="" class="text-white text-decoration-none">Terms of use</a>
+              </div>
+              <div class="d-flex justify-content-evenly align-items-center pt-3 fs-3">
+                  <a href="https://www.facebook.com/engr.cse.md.samim.sarkar/" target="_blank" class="text-primary">
+                      <i class="fa-brands fa-facebook bg-dark p-2 mx-2 rounded-5"></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" class="text-primary">
+                      <i class="fa-brands fa-twitter bg-dark p-2 mx-2 rounded-5"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/samim-sarkar-/" target="_blank" class="text-primary">
+                      <i class="fa-brands fa-linkedin bg-dark p-2 mx-2 rounded-5"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="text-primary">
+                      <i class="fa-brands fa-instagram bg-dark p-2 mx-2 rounded-5"></i>
+                  </a>
+              </div>
           </div>
-        </footer>
+      </footer>
         <!----------------------------- 
             Footer Section End 
         ------------------------------>
